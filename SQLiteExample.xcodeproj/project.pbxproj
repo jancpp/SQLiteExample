@@ -15,6 +15,7 @@
 		3D06DFEE21058C270064AC1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D06DFEC21058C270064AC1C /* LaunchScreen.storyboard */; };
 		3D06DFF921058C270064AC1C /* SQLiteExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06DFF821058C270064AC1C /* SQLiteExampleTests.swift */; };
 		3D06E00421058C270064AC1C /* SQLiteExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06E00321058C270064AC1C /* SQLiteExampleUITests.swift */; };
+		3D169FDB21082F0900304764 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D169FDA21082F0900304764 /* Hero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D06DFFF21058C270064AC1C /* SQLiteExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D06E00321058C270064AC1C /* SQLiteExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteExampleUITests.swift; sourceTree = "<group>"; };
 		3D06E00521058C270064AC1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D169FDA21082F0900304764 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,11 @@
 		3D06DFDF21058C250064AC1C /* SQLiteExample */ = {
 			isa = PBXGroup;
 			children = (
-				3D06DFE021058C250064AC1C /* AppDelegate.swift */,
-				3D06DFE221058C250064AC1C /* ViewController.swift */,
-				3D06DFE421058C250064AC1C /* Main.storyboard */,
-				3D06DFEA21058C270064AC1C /* Assets.xcassets */,
-				3D06DFEC21058C270064AC1C /* LaunchScreen.storyboard */,
+				3D169FD921082EF000304764 /* Model */,
+				3D169FD821082EDF00304764 /* Controller */,
+				3D169FD721082ECC00304764 /* View */,
 				3D06DFEF21058C270064AC1C /* Info.plist */,
-				3D06DFE721058C250064AC1C /* SQLiteExample.xcdatamodeld */,
+				3D169FD621082E7B00304764 /* Supporting Files */,
 			);
 			path = SQLiteExample;
 			sourceTree = "<group>";
@@ -126,6 +126,42 @@
 				3D06E00521058C270064AC1C /* Info.plist */,
 			);
 			path = SQLiteExampleUITests;
+			sourceTree = "<group>";
+		};
+		3D169FD621082E7B00304764 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D06DFE021058C250064AC1C /* AppDelegate.swift */,
+				3D06DFEA21058C270064AC1C /* Assets.xcassets */,
+				3D06DFE721058C250064AC1C /* SQLiteExample.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			path = "Supporting Filew";
+			sourceTree = "<group>";
+		};
+		3D169FD721082ECC00304764 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D06DFE421058C250064AC1C /* Main.storyboard */,
+				3D06DFEC21058C270064AC1C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D169FD821082EDF00304764 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D06DFE221058C250064AC1C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D169FD921082EF000304764 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D169FDA21082F0900304764 /* Hero.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +298,7 @@
 				3D06DFE321058C250064AC1C /* ViewController.swift in Sources */,
 				3D06DFE121058C250064AC1C /* AppDelegate.swift in Sources */,
 				3D06DFE921058C250064AC1C /* SQLiteExample.xcdatamodeld in Sources */,
+				3D169FDB21082F0900304764 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
